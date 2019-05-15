@@ -15,14 +15,15 @@ for f in file :
                 # print(df)
                 month = df.iloc[:,0]
                 price = df.iloc[:,1]
-                plt.bar(month, price, color='b')
-                plt.xlabel('MONTH')
-                plt.xticks(rotation=45)
-                plt.ylabel('PRICE IN GHS')
-                plt.title('YAM PRICE FOR ' + year)
-                plt.savefig('/home/ahmedk/Desktop/yfarm/prices/Fig/' + year + '.png')
-                print('Saving Figure for ' +year)
-                # plt.show()
+                print(price)
+                plt.bar(month, float(price), color='b')
+                # plt.xlabel('MONTH')
+                # plt.xticks(rotation=45)
+                # plt.ylabel('PRICE IN GHS')
+                # plt.title('YAM PRICE FOR ' + year)
+                # plt.savefig('/home/ahmedk/Desktop/yfarm/prices/Fig/' + year + '.png')
+                # print('Saving Figure for ' +year)
+                plt.show()
  
 
    
