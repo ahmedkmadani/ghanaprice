@@ -1,15 +1,6 @@
 import React, { Component } from 'react' 
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css"
-// import Form from 'react-bootstrap/Form'
-// import Col from 'react-bootstrap/Col'
-// import Row from 'react-bootstrap/Row'
-// import Button from 'react-bootstrap/Button'
-
-
-// import 'bootstrap/dist/css/bootstrap.css';
-
-// import './App.css'
 
   
 export class PriceForm extends Component {
@@ -55,36 +46,37 @@ export class PriceForm extends Component {
                 <form className="formPrice" onSubmit = {this.handleCheck}>
                    <h1 className="title">Y-farm Pricing Model</h1>
                     {/* Implement React calender here */}
-                    {/* <Form.Row> */}
-                   <label className="date"> Date:<br/></label>
-                   
+                    <div className="form-group">
+                   <label > Date:<br/></label>
                     <DatePicker
+                        className="date"
                         selected={this.state.startDate}
-                        onChange = {this.handleDate}
-                        // placeholderText="Select a date" 
-                        />
-                    {/* </Form.Row> */}
-
+                        onChange = {this.handleDate}/>
+                    </div>
                     {/* Price dropdown */}
-                    <label>Amount:
+                    <div className="form-group">
+                    <label>Amount:</label>
                     <select amount={this.state.value} onChange={this.handleAmount}>
                         <option>50</option>
                         <option>100</option>
                         <option>250</option>
                     </select>
-                    </label>
-                    <label>Produce<eventbr/>
+                    
+                    <label>Produce<br/></label>
                     <select produce={this.state.value} onChange={this.handleProduce}>
                         <option>Yams</option>
                         <option>Cassava</option>
                         <option>Potatoes</option>
                     </select>
-                    </label>
-                    <input type="submit" value="Check"/>
-                    <label>Price:
-                    <input type="text" value={this.state.value} 
+                    
+                    </div>
+
+                    <div className="form-group"><input type="submit" value="Check"/></div>
+                    <div className="form-group">
+                    <label>Price:</label>
+                    <input className="finalPrice" type="text"  value={this.state.value} 
                     onChange ={this.handleChange}/>
-                    </label>
+                    </div>
                 </form>
             </div>
         )

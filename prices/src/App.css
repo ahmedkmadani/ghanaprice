@@ -14,11 +14,9 @@ html, body {
   border: 2px solid #d3d3d3;
   border-radius: .5em;
   align-content: center;
-  /* margin-top:20px; */
   margin-left:auto;
   margin-right:auto;
-  width: 80%;
-  /* margin-top: 9vw; */
+  /* width: 100%; */
   height: auto;
   background-color: #fff;
 }
@@ -35,11 +33,42 @@ label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
-/* .date{
-  border-radius: 1px;
-  font-size:1em;
+.finalPrice {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.formPrice label{
-  padding:1px;
-} */
+.date {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 18px 0 ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 18px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type= submit]{
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
