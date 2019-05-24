@@ -1,14 +1,6 @@
 import React, { Component } from 'react' 
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css"
-// import Form from 'react-bootstrap/Form'
-// import Col from 'react-bootstrap/Col'
-// import Row from 'react-bootstrap/Row'
-// import Button from 'react-bootstrap/Button'
-
-
-// import 'bootstrap/dist/css/bootstrap.css';
-
 // import './App.css'
 
   
@@ -53,18 +45,15 @@ export class PriceForm extends Component {
         return (
             <div className="container">
                 <form className="formPrice" onSubmit = {this.handleCheck}>
-                   <h1 className="title">Y-farm Pricing Model</h1>
+                   <h1>Y-farm Pricing Model</h1>
                     {/* Implement React calender here */}
-                    {/* <Form.Row> */}
-                   <label className="date"> Date:<br/></label>
-                   
+                   <label className="date"> Date:<br/>
                     <DatePicker
                         selected={this.state.startDate}
                         onChange = {this.handleDate}
                         // placeholderText="Select a date" 
                         />
-                    {/* </Form.Row> */}
-
+                    </label>
                     {/* Price dropdown */}
                     <label>Amount:
                     <select amount={this.state.value} onChange={this.handleAmount}>

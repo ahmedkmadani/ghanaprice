@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import './App.css'
+import './App.css'
 import logo from './logo.svg'
 import PriceForm from './ui/PriceForm'
 
