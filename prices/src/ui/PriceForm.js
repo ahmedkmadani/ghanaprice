@@ -1,8 +1,5 @@
 import React, { Component } from 'react' 
-// import DatePicker from 'react-datepicker'
-import "react-datepicker/dist/react-datepicker.css"
-import MonthYearPicker from 'react-month-year-picker'
-  
+ 
 export class PriceForm extends Component {
 
     constructor(props){
@@ -42,30 +39,36 @@ export class PriceForm extends Component {
             <div className="container">
                 <form className="formPrice" onSubmit = {this.handleCheck}>
                    <h1 className="title">Y-farm Pricing Model</h1>
-                    {/* Implement React calender here */}        
-                        
+
+                    <div className="form-group">
+                        <label>Month :</label>
+                        <input className="month" type="text" placeholder="1"/>
+                         <label>Year :</label>
+                         <input className="year" type="text" placeholder="1970"/>
+                    
+                    </div>
 
                     {/* Price dropdown */}
                     <div className="form-group">
-                    <label>Amount:</label>
+                    <label>Amount :</label>
                     <select amount={this.state.value} onChange={this.handleAmount}>
-                        <option>50</option>
-                        <option>100</option>
+                        {/* <option>50</option>
+                        <option>100</option> */}
                         <option>250</option>
                     </select>
                     
-                    <label>Produce<br/></label>
+                    <label>Produce : <br/></label>
                     <select produce={this.state.value} onChange={this.handleProduce}>
                         <option>Yams</option>
-                        <option>Cassava</option>
-                        <option>Potatoes</option>
+                        {/* <option>Cassava</option>
+                        <option>Potatoes</option> */}
                     </select>
                     
                     </div>
 
                     <div className="form-group">
                         <input type="submit" value="Check"/>
-                        <input type="submit" value="Reset"/>
+                        {/* <input type="submit" value="Reset"/> */}
                         </div>
                     <div className="form-group">
                     <label>Price:</label>

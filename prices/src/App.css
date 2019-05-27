@@ -32,8 +32,9 @@ label {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  margin:10px;
 }
-.finalPrice {
+.finalPrice, .month, .year {
   width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -66,7 +67,7 @@ input[type= submit]{
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0 ;
+  margin: 8px 0 0 80px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
